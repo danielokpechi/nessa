@@ -359,15 +359,15 @@
       <div class="kicker">Plates · select · tap to enlarge</div>
     </div>
     <div class="gallery reveal d1">
-      <div class="gitem"><img src="images/rooftop-dusk.jpg" alt="Nessa, rooftop dusk" loading="lazy" /></div>
-      <div class="gitem"><img src="images/street-peace.jpg" alt="Nessa on a London street" loading="lazy" /></div>
-      <div class="gitem"><img src="images/staircase-blue.jpg" alt="Nessa on a staircase" loading="lazy" /></div>
-      <div class="gitem"><img src="images/street-autumn.jpg" alt="Nessa, autumn street" loading="lazy" /></div>
-      <div class="gitem"><img src="images/restaurant-green.jpg" alt="Nessa at dinner" loading="lazy" /></div>
-      <div class="gitem"><img src="images/beach-coconut.jpg" alt="Nessa at the beach" loading="lazy" /></div>
-      <div class="gitem"><img src="images/portrait-sage.jpg" alt="Nessa, portrait" loading="lazy" /></div>
-      <div class="gitem"><img src="images/rooftop-back.jpg" alt="Nessa, rooftop" loading="lazy" /></div>
-      <div class="gitem"><img src="images/market-nougat.jpg" alt="Nessa at the market" loading="lazy" /></div>
+      <div class="gitem"><img src="images/rooftop-dusk.jpg" alt="Nessa, rooftop dusk" /></div>
+      <div class="gitem"><img src="images/street-peace.jpg" alt="Nessa on a London street" /></div>
+      <div class="gitem"><img src="images/staircase-blue.jpg" alt="Nessa on a staircase" /></div>
+      <div class="gitem"><img src="images/street-autumn.jpg" alt="Nessa, autumn street" /></div>
+      <div class="gitem"><img src="images/restaurant-green.jpg" alt="Nessa at dinner" /></div>
+      <div class="gitem"><img src="images/beach-coconut.jpg" alt="Nessa at the beach" /></div>
+      <div class="gitem"><img src="images/portrait-sage.jpg" alt="Nessa, portrait" /></div>
+      <div class="gitem"><img src="images/rooftop-back.jpg" alt="Nessa, rooftop" /></div>
+      <div class="gitem"><img src="images/market-nougat.jpg" alt="Nessa at the market" /></div>
     </div>
   </div>
 </section>
@@ -424,7 +424,7 @@
   // reveal on scroll
   var io=new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  },{threshold:0.16,rootMargin:'0px 0px -8% 0px'});
+  },{threshold:0.02,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
   // lightbox
